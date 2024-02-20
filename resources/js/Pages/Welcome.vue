@@ -2,6 +2,8 @@
 import { Head, Link } from '@inertiajs/vue3';
 import Content from './Components/Assets/Content.vue';
 import DefaultButton from './Components/Assets/DefaultButton.vue';
+import NavMenu from './Components/Assets/Nav/NavMenu.vue';
+import NavItem from './Components/Assets/Nav/NavItem.vue';
 
 defineProps({
     canLogin: {
@@ -30,13 +32,15 @@ defineProps({
                     Dashboard</Link>
 
                     <template v-else>
-                       <DefaultButton class="mr-2"> <Link :href="route('login')" class="">
-                        Log in</Link></DefaultButton>
+                        <DefaultButton class="mr-2">
+                            <Link :href="route('login')" class="">
+                            Log in</Link>
+                        </DefaultButton>
 
-                      <DefaultButton>
-                        <Link v-if="canRegister" :href="route('register')" class="">
-                        Register</Link>
-                      </DefaultButton>
+                        <DefaultButton>
+                            <Link v-if="canRegister" :href="route('register')" class="">
+                            Register</Link>
+                        </DefaultButton>
 
                     </template>
                 </div>
@@ -45,19 +49,26 @@ defineProps({
             </Content>
 
         </section>
+        <NavMenu>
+            <NavItem>Home</NavItem>
+            <NavItem>Sobre</NavItem>
+            <NavItem>Notícias</NavItem>
+            <NavItem>Contato</NavItem>
+        </NavMenu>
 
-        
+
+
+
 
 
     </header>
 </template>
 
 <style scoped>
-   .logo {
-        @apply text-white text-xl font-bold;
-        background-image: linear-gradient(to right, rgb(5 150 105), rgb(14 116 144));
-        background-clip: text;
-        -webkit-text-fill-color: transparent;
-   }
-
+.logo {
+    @apply text-white text-xl font-bold;
+    background-image: linear-gradient(to right, rgb(5 150 105), rgb(14 116 144));
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
 </style>

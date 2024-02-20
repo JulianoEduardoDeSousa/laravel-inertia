@@ -19,7 +19,7 @@ defineProps({
     <Head title="Bem Vindo" />
 
     <header class="flex flex-wrap w-full">
-        <section class="flex w-full p-4 text-white bg-gray-600">
+        <section class="flex w-full p-4 text-white bg-[#181818]">
             <Content class="items-center justify-between">
                 <div class="logo">
                     Meu App
@@ -67,7 +67,7 @@ defineProps({
 <style scoped>
 .logo {
     @apply text-white text-xl font-bold;
-    background-image: linear-gradient(to right, rgb(5 150 105), rgb(14 116 144));
+    background-image: linear-gradient(to right, #42b883, rgb(14 116 144));
     background-clip: text;
     -webkit-text-fill-color: transparent;
 }

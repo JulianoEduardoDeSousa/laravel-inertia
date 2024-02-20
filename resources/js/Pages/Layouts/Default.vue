@@ -1,9 +1,9 @@
 <script setup>
 import { Head, Link } from '@inertiajs/vue3';
-import Content from '../Pages/Components/Assets/Content.vue';
-import DefaultButton from '../Pages/Components/Assets/DefaultButton.vue';
-import NavMenu from '../Pages/Components/Assets/Nav/NavMenu.vue';
-import NavItem from '../Pages/Components/Assets/Nav/NavItem.vue';
+import Content from '../Components/Assets/Content.vue';
+import DefaultButton from '../Components/Assets/DefaultButton.vue';
+import NavMenu from '../Components/Assets/Nav/NavMenu.vue';
+import NavItem from '../Components/Assets/Nav/NavItem.vue';
 
 defineProps({
     canLogin: {

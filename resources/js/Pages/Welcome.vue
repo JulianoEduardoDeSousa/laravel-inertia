@@ -19,7 +19,7 @@ defineProps({
     <header class="flex flex-wrap w-full">
         <section class="flex w-full p-4 text-white bg-gray-600">
             <Content class="items-center justify-between">
-                <div class="font-bold text-white font-xl">
+                <div class="logo">
                     Meu App
                 </div>
 
@@ -46,11 +46,18 @@ defineProps({
 
         </section>
 
+        
+
 
     </header>
 </template>
 
 <style scoped>
-
+   .logo {
+        @apply text-white text-xl font-bold;
+        background-image: linear-gradient(to right, rgb(5 150 105), rgb(14 116 144));
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+   }
 
 </style>
